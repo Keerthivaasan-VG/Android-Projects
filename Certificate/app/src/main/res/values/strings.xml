@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Certificate</string>
+    <string-array name="dept_array">
+        <item>Select the Department</item>
+        <item>CSE</item>
+        <item>IT</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>MECH</item>
+    </string-array>
+</resources>
