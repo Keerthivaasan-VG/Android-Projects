@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1565C0"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus Timing"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:gravity="center"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1565C0"
+            app:tabTextColor="#BBDEFB"
+            app:tabSelectedTextColor="#FFFFFF"
+            app:tabIndicatorColor="#FFFFFF"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/nextBusSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/nextBusTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="அடுத்த பஸ் எஸ்போது?"
+                        android:textSize="18sp"
+                        android:textColor="#D32F2F"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <FrameLayout
+                        android:id="@+id/routeHeaderContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:id="@+id/routeHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="KPM to தேனி"
+                            android:textSize="16sp"
+                            android:textColor="#FFFFFF"
+                            android:background="#757575"
+                            android:padding="12dp"/>
+
+                        <ImageView
+                            android:id="@+id/busAnimationImage"
+                            android:layout_width="120dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/tn_bus_side"
+                            android:layout_gravity="center_vertical"
+                            android:visibility="gone"
+                            android:elevation="10dp"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"/>
+                    </FrameLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/nextBusCard1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/nextBusTime1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="06:15 AM"
+                                    android:textSize="18sp"
+                                    android:textColor="#333333"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/nextBusType1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Govt bus (via Thadichery)"
+                                    android:textSize="14sp"
+                                    android:textColor="#666666"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/nextBusMinutes1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15 நிமிடங்கள் உள்ளன"
+                                android:textSize="12sp"
+                                android:textColor="#4CAF50"
+                                android:textStyle="bold"
+                                android:padding="8dp"
+                                android:background="@drawable/minutes_badge"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/nextBusCard2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#FFFFFF">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="16dp"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/nextBusTime2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="06:45 AM"
+                                    android:textSize="18sp"
+                                    android:textColor="#333333"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:id="@+id/nextBusType2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Govt bus (via Thadichery)"
+                                    android:textSize="14sp"
+                                    android:textColor="#666666"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/nextBusMinutes2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="45 நிமிடங்கள் உள்ளன"
+                                android:textSize="12sp"
+                                android:textColor="#4CAF50"
+                                android:textStyle="bold"
+                                android:padding="8dp"
+                                android:background="@drawable/minutes_badge"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fullListHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KPM to தேனி (முழு பட்டியல்)"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF"
+                        android:background="#1565C0"
+                        android:padding="12dp"
+                        android:textStyle="bold"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/busListRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:clipToPadding="false"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tabLayout" type="id" />
+    <item name="contentContainer" type="id" />
+    <item name="nextBusTitle" type="id" />
+    <item name="nextBusCard1" type="id" />
+    <item name="routeHeader" type="id" />
+    <item name="nextBusCard2" type="id" />
+    <item name="nextBusTime1" type="id" />
+    <item name="nextBusType1" type="id" />
+    <item name="nextBusMinutes1" type="id" />
+    <item name="nextBusTime2" type="id" />
+    <item name="nextBusType2" type="id" />
+    <item name="nextBusMinutes2" type="id" />
+    <item name="fullListHeader" type="id" />
+    <item name="busListRecyclerView" type="id" />
+    <item name="busAnimationImage" type="id" />
+    <item name="nextBusSection" type="id" />
+    <item name="headerLayout" type="id" />
+</resources>

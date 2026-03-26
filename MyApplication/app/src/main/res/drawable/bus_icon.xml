@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bus body (TNSTC green) -->
+    <item
+        android:left="0dp"
+        android:top="10dp"
+        android:right="0dp"
+        android:bottom="10dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#1B5E20"/>
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+
+    <!-- White stripe -->
+    <item
+        android:left="0dp"
+        android:top="26dp"
+        android:right="0dp"
+        android:bottom="20dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- Windows -->
+    <item android:left="8dp" android:top="14dp" android:right="80dp" android:bottom="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#BBDEFB"/>
+        </shape>
+    </item>
+
+    <item android:left="44dp" android:top="14dp" android:right="44dp" android:bottom="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#BBDEFB"/>
+        </shape>
+    </item>
+
+    <item android:left="80dp" android:top="14dp" android:right="8dp" android:bottom="30dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#BBDEFB"/>
+        </shape>
+    </item>
+
+    <!-- Wheels -->
+    <item android:left="20dp" android:top="34dp" android:right="80dp" android:bottom="0dp">
+        <shape android:shape="oval">
+            <solid android:color="#212121"/>
+        </shape>
+    </item>
+
+    <item android:left="80dp" android:top="34dp" android:right="20dp" android:bottom="0dp">
+        <shape android:shape="oval">
+            <solid android:color="#212121"/>
+        </shape>
+    </item>
+
+</layer-list>

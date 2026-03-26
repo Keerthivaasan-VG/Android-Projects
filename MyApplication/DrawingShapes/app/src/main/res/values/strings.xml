@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Drawing Shapes</string>
+    <string name="todo">TODO</string>
+    <string-array name="spinner">
+        <item>Select the Shapes</item>
+        <item>House</item>
+        <item>Rectangle</item>
+        <item>Square</item>
+        <item>Triangle</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>Select the Colors</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Black</item>
+    </string-array>
+</resources>
